@@ -1,0 +1,10 @@
+import streamlit as st
+
+def check_openpyxl():
+    try:
+        import openpyxl
+        st.success("openpyxl está instalado correctamente.")
+    except ImportError:
+        st.error("openpyxl no está instalado. Intenta agregarlo a tu archivo requirements.txt.")
+
+check_openpyxl()
