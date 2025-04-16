@@ -7,17 +7,6 @@ import pandas as pd
 from io import BytesIO
 import streamlit as st
 
-import subprocess
-import sys
-import streamlit as st
-
-try:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "openpyxl"])
-    st.success("openpyxl instalado correctamente.")
-except subprocess.CalledProcessError as e:
-    st.error(f"Error al instalar openpyxl: {e}")
-
-
 # Configuración de la página
 st.set_page_config(page_title="Financial Risk Management", page_icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14bSWA3akUYXe-VV04Nw2K0QnQCwCV9SG8g&s")
 st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14bSWA3akUYXe-VV04Nw2K0QnQCwCV9SG8g&s", width=250)
