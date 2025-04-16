@@ -8,8 +8,8 @@ from io import BytesIO
 import streamlit as st
 
 import subprocess
-subprocess.run(["pip", "install", "openpyxl"])
-
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "openpyxl"])
 
 # Configuración de la página
 st.set_page_config(page_title="Financial Risk Management", page_icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14bSWA3akUYXe-VV04Nw2K0QnQCwCV9SG8g&s")
